@@ -1,6 +1,6 @@
 export const DB_COLLECTIONS = {
     products: '/products',
-    productCategories: '/productCategories',
+    productCategories: '/categories',
     shoppingCarts: '/shoppingCarts',
     orders: '/orders',
     adminUsers: '/adminUsers',

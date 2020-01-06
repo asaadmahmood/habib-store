@@ -17,7 +17,6 @@ export class HeaderComponent implements OnInit, OnDestroy {
   subscriptions: Subscription[] = [];
   cart: ICart;
   totalItems = 0;
-  isAdminUser = false;
 
   constructor(
     private authService: AuthService,
@@ -30,7 +29,6 @@ export class HeaderComponent implements OnInit, OnDestroy {
     this.getLoggedInUser();
     this.getFBLoggedInUser();
     this.getCart();
-    this.getAdminUsers();
   }
 
   ngOnDestroy() {
@@ -44,15 +42,6 @@ export class HeaderComponent implements OnInit, OnDestroy {
   getFBLoggedInUser() {
     this.subscriptions.push(this.authService.getFireBaseLoggedInUser().subscribe(user => {
       this.getLoggedInUser();
-    }));
-  }
-
-  getAdminUsers() {
-    this.subscriptions.push(this.userService.getAdminUsers().subscribe(users => {
-      const adminUsers = users.payload.val() as string[];
-      if (this.user && adminUsers.indexOf(this.user.id) > -1) {
-        this.isAdminUser = true;
-      }
     }));
   }
 

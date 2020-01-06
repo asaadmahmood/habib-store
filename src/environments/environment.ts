@@ -5,14 +5,14 @@
 export const environment = {
   production: false,
   firebase: {
-    apiKey: 'AIzaSyAr2KhH8-Ht5hkZMu_yHrLm8XSq4kUdVOk',
-    authDomain: 'fir-mediwod.firebaseapp.com',
-    databaseURL: 'https://fir-mediwod.firebaseio.com',
-    projectId: 'firebase-mediwod',
-    storageBucket: 'firebase-mediwod.appspot.com',
-    messagingSenderId: '898798576522',
-    appId: '1:898798576522:web:ca78d83482cba7208d5e73'
-  }
+    apiKey: 'AIzaSyBYFE_Kf6s17_oU2q2MJqVTIbf3aVPlhSM',
+    authDomain: 'habib-store-1633a.firebaseapp.com',
+    databaseURL: 'https://habib-store-1633a.firebaseio.com',
+    projectId: 'habib-store-1633a',
+    storageBucket: 'habib-store-1633a.appspot.com',
+    messagingSenderId: '869923774516',
+    appId: '1:869923774516:web:f49e87aa0f978389846a61'
+  },
 };
 
 /*
